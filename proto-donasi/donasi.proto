@@ -14,22 +14,5 @@ message APIRES {
 }
 
 service DonasiService {
-    rpc AddEvent (APIREQ) returns (APIRES);
-    rpc RemoveEvent (APIREQ) returns (APIRES);
-    rpc UpdateEvent (APIREQ) returns (APIRES);
-    rpc GetEvent (APIREQ) returns (APIRES);
-    rpc GetCategory (APIREQ) returns (APIRES);
-
-    rpc SaveTransaction (APIREQ) returns (APIRES);
-    rpc GetTransaction (APIREQ) returns (APIRES);
-    rpc GetObjectImage(APIREQ) returns (APIRES);
-    rpc GetEventMB(APIREQ) returns (APIRES);
-
-    rpc UpdateStatusEvent(APIREQ) returns (APIRES);
-    rpc RemoveDenom(APIREQ) returns (APIRES);
-    rpc RemoveTier(APIREQ) returns (APIRES);
-
-    rpc AddCategory(APIREQ) returns (APIRES);
-    rpc UpdateCategory(APIREQ) returns (APIRES);
-
+    rpc GetTransaction2 (APIREQ) returns (APIRES);
 }
